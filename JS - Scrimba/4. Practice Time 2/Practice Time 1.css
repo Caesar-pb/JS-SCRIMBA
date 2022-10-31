@@ -1,0 +1,228 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 700px;
+    background-color: rgb(247, 247, 247);
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.emoji-fruit-apps {
+    display: flex;
+}
+
+/* // EMOJI FIGHTER /////////////////////////////////////////// */
+
+.emoji-fighter {
+    background-color: rgb(255, 241, 194);
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+    padding-top: 40px;
+    padding-right: 4px;
+    padding-bottom: 45px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(224, 148, 103);
+    font-family: Berkshire Swash;
+    font-size: 60px;
+    line-height: 50px;
+    transform: rotate(-5deg);
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+#stage {
+    color: rgb(230, 125, 76);
+    text-shadow: 0 2px 0px rgb(124, 56, 36, 0.25);
+    font-family: Berkshire Swash;
+    font-size: 50px;
+    margin-bottom: 40px;
+    height: 70px;
+}
+
+#fightButton {
+    color: white;
+    background-color: rgb(184, 127, 94);
+    font-family: Berkshire Swash;
+    font-size: 26px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#fightButton:hover {
+    background-color: rgb(212, 127, 78);
+}
+
+#fightButton:active {
+    background-color: rgb(255, 127, 68);
+}
+
+/* // FRUIT SORTER /////////////////////////////////////////// */
+
+.fruit-sorter {
+    background-color: rgb(253, 235, 219);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 20px;
+    width: 400px;
+    margin-top: 50px;
+    
+}
+
+.title-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(180, 120, 120);
+    font-family: arial;
+    font-weight: 900;
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+.sort-button {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(199, 211, 128);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px 7px 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.sort-button:hover {
+    background-color: rgb(188, 199, 127);
+}
+
+.sort-button:active {
+    background-color: rgb(175, 187, 110);
+}
+
+#apple-shelf {
+    background-color: lightcoral;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    height: 27px;
+}
+
+#orange-shelf {
+    background-color: lightsalmon;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 27px;
+}
+
+/* // RANDOM PASWORD GENERATOR /////////////////////////////////////////// */
+
+.password-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: karla;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #1F2937;
+    width: 425px;
+    height: 300px;
+    padding: 25px 40px 35px 40px;
+    border-radius: 10px;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+span {
+    color: #4ADF86;
+}
+
+.sub-header {
+    color: lightgrey;
+    margin: 0px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.generate-button {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #10B981;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.generate-button:hover {
+    background-color: #20c990;
+}
+
+.generate-button:active {
+    background-color: #3debb1;
+}
+
+
+.line {
+    background-color: white;
+    height: 1px;
+    margin-bottom: 29px;
+    opacity: 0.3;
+}
+
+.passwords-container {
+    color: #55F991;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+#password-one {
+    margin-right: 30px;
+    background-color: #273549;
+    border-radius: 5px;
+    padding: 12px 30px;
+    width: 150px;
+    height: 19px;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+#password-two {
+    background-color: #273549;
+    border-radius: 5px;
+    padding: 12px 30px;
+    width: 150px;
+    height: 19px;
+    text-align: center;
+    white-space: nowrap;
+}

@@ -1,0 +1,121 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 8px;
+    padding-bottom: 500px;
+}
+
+p {
+    color: white;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.table-background {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -5;
+}
+
+.backgroung-container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-left: 100px;
+}
+
+.game-elements {
+    font-size: 18px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: goldenrod;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0px 0px 16px 0px;
+}
+
+#message-element {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.cards {
+    margin-bottom: 14px;
+}
+
+.sum {
+    margin-bottom: 20px;
+}
+
+.new-card-button {
+    color: rgb(28, 58, 23);
+    background-color: goldenrod;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 26px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.15s;
+}
+
+.new-card-button:hover {
+    background-color: rgb(235, 183, 53);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.new-card-button:active {
+    background-color: rgb(255, 205, 78);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+.start-game-button {
+    color: rgb(28, 58, 23);
+    background-color: goldenrod;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 19px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.15s;
+}
+
+.start-game-button:hover {
+    background-color: rgb(235, 183, 53);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.start-game-button:active {
+    background-color: rgb(255, 205, 78);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+#greeting-element {
+    color: rgb(83, 83, 83);
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#player {
+    color: rgb(248, 255, 188);
+    position: absolute;
+    position: absolute;
+    bottom: 22px;
+    right: 28px;
+}

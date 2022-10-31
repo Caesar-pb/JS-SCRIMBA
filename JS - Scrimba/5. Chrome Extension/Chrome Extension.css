@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+}
+
+
+#imput-element {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 16px;
+    border: 1px solid #5f9341;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+}
+
+#imput-element:focus {
+    border: 1px solid #b1ae2b;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#save-input-button {
+    color: white;
+    background-color: #5f9341;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#save-input-button:hover {
+    background-color: #789c46;
+}
+
+#save-input-button:active {
+    background-color: #92b64f;
+}
+
+#delete-button {
+    color: #5f9341;
+    background-color: white;
+    border: 1px solid #5f9341;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+#delete-button:hover {
+    color: #5f9341;
+    background-color: #f3ffbf;
+}
+
+#delete-button:active {
+    color: #5f9341;
+    background-color: hsl(83, 100%, 78%);
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+li {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+a {                      
+    color: #789c46;
+}
+/* #box {
+    background-color: rgb(75, 202, 196);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: min-content;
+    white-space: nowrap;
+    padding: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: backgroun-color 0.2s;
+}
+
+#box:hover {
+    background-color: rgb(67, 207, 184);
+}
+
+#box:active {
+    background-color: rgb(70, 218, 173);
+} */
+
+/* #container {
+    margin-top: 30px;
+}
+
+#container button {
+    background: lightcoral;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#container button:hover {
+    background: rgb(226, 113, 113);
+}
+
+#container button:active {
+    background: rgb(199, 81, 81);
+}
+
+.paragraph {
+    color: rgb(245, 127, 106);
+    font-weight: bold;
+} */

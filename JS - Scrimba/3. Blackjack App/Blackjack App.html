@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Blackjack App</title>
+            <link rel="stylesheet" href="Blackjack App.css">
+        </head>
+        <body>
+            <div class="bj-table">
+                <div class="backgroung-container">  
+                    <div>
+                        <img class="table-background" src="bj-images/bj-table.jpg">
+                    </div>
+                    <div class="game-elements">
+                        <h1>Blackjack</h1>
+                        <p id="message-element">Want to play a round?</p>
+                        <p class="cards" id="cards-element">Cards:</p>
+                        <p class="sum" id="sum-element">Sum:</p>
+                        <button class="start-game-button" onclick="startGame()">START GAME</button>
+                        <button class="new-card-button" onclick="newCard()">NEW CARD</button>
+                    </div>
+                    <p id="player"></p>
+                </div>
+            </div>
+            <p id="greeting-element"></p>
+            <script src="Blackjack App.js"></script>
+        </body>
+    </html>

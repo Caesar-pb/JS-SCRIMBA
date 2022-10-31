@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="index.css">
+            <title>Counter App</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="all-app">
+                <div class="counter-app">
+                    <div class="count-text">
+                        <p class="people-entered">PEOPLE ENTERED</p>
+                        <p id="count-element">0</p>
+                    </div>
+                    <div class="plus-minus">
+                        <button id="reduction-button" onclick="reduction()">-</button>
+                        <button id="increment-button" onclick="increment()">+</button>
+                    </div> 
+                    <div class="save-log">
+                        <div>
+                            <button id="save-button" onclick="save()">SAVE</button>
+                        </div>
+                        <div>
+                            <p class="prev-entries">PREVIOUS ENTRIES</p>
+                            <p id="save-element"></p>
+                            <button class="clear-button" onclick="reset()">CLEAR ENTRIES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="index.js"></script>
+        </body>
+    </html>

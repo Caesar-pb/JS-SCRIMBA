@@ -1,0 +1,166 @@
+body {
+    font-family: roboto, arial;
+    padding-top: 70px;
+}
+
+p {
+    margin: 0px;
+}
+
+.all-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.counter-app {
+    background-color: rgb(20, 65, 107);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(65, 155, 240);
+    border-radius: 10px;
+    height: 550px;
+    padding: 30px 32px;
+}
+
+
+.count-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.people-entered {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#count-element {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.plus-minus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#reduction-button {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: rgb(49, 96, 197);
+    border: none;
+    border-radius: 7px;
+    padding: 15px 30px 17px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+#reduction-button:hover {
+    background-color: rgb(54, 102, 206);
+}
+
+#reduction-button:active {
+    background-color: rgb(65, 113, 218);
+}
+
+#increment-button {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: rgb(0, 140, 255);
+    border: none;
+    border-radius: 7px;
+    padding: 17px 100px 15px 102px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+#increment-button:hover {
+    background-color: rgb(32, 155, 255);
+}
+
+#increment-button:active {
+    background-color: rgb(75, 174, 255);
+}
+
+
+.save-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#save-button {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(41, 168, 119);
+    border: none;
+    border-radius: 7px;
+    padding: 15px 128px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+#save-button:hover {
+    background-color: rgb(43, 189, 128);
+}
+
+#save-button:active {
+    background-color: rgb(52, 214, 114);
+}
+
+.prev-entries {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-stretch: 100px;
+    margin-bottom: 15px;
+}
+
+#save-element {
+    color: rgb(254, 255, 219);
+    font-size: 25px;
+    height: 150px;
+    width: 300px;
+    line-height: 50px;
+    opacity: 0.8;
+    margin-bottom: 17px;
+}
+
+.clear-button {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(20, 65, 107);
+    border-color: rgb(113, 172, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 15px 75px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.clear-button:hover {
+    background-color: rgb(19, 60, 99);
+    border-color: rgb(38, 125, 206);
+}
+
+.clear-button:active {
+    background-color: rgb(16, 53, 87);
+    border-color: rgb(48, 140, 226);
+}

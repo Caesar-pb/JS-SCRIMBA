@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Practice Time 1</title>
+        <link rel="stylesheet" href="Practice Time 1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <div class="shoe-calculator">
+
+        <!-- /////  SHOE  ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->        
+
+                <div class="shoe-purchase">
+                    <img class="shoe-picture" src="images - practice 1/nike-shoe.webp" alt="Nike shoe">
+                    <p class="product-model">
+                        Air Jordan 11 CMFT Low
+                    </p>
+                    <p class="product-description">
+                        Men's Shoes
+                    </p>
+                    <button class="purchase-button" onclick="purchase()">
+                        Purchase - $149
+                    </button>
+                    <p id="error-element"></p>
+                </div>
+    
+        <!-- /////  SIMPLE CALCULATOR  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        
+                <div class="calculator">
+                    <div class="nums-el">
+                        <p id="num1-element"></p>
+                        <p id="num2-element"></p>
+                    </div>
+                    <div class="calculator-buttons">
+                        <div class="add-subtract-buttons">
+                            <button class="add-button" onclick="add()">+</button>
+                            <button class="subtract-button" onclick="subtract()">-</button>
+                        </div>
+                        <div class="divide-multiply-buttons">
+                            <button class="divide-button" onclick="divide()">/</button>
+                            <button class="multiply-button" onclick="multiply()">x</button>
+                        </div>
+                    </div>   
+                    <p id="sum-element"></p>
+                    <button class="clear-button" onclick="reset()">Clear</button>
+                </div>
+            </div>
+            
+
+        <!-- /////  BASKETBALL SCORE BOARD  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+           
+                <div class="board-background">
+                    <div class="home-score">
+                        <h1 class="team">HOME</h1>
+                        <div class="board-score-container">
+                            <p class="board-score" id="home-score-number">0</p>
+                        </div>
+                        <div class="score-buttons">
+                            <button class="plus-one-button" onclick="homePlusOneScore()">+1</button>
+                            <button class="plus-two-button" onclick="homePlusTwoScore()">+2</button>
+                            <button class="plus-three-button" onclick="homePlusThreeScore()">+3</button>
+                        </div>
+                    </div>
+                    <div class="reset-btn">
+                        <p class="reset-txt">NEW</p>   
+                        <button class="reset-button" onclick="resetBoard()">
+                            <img class="reset-icon" src="images - practice 1/reset-icon-white.svg">
+                        </button>
+                        <p class="board-txt">GAME</p>
+                    </div>
+                    <div class="guest-score">
+                        <h1 class="team">GUEST</h1>
+                        <div class="board-score-container">
+                            <p class="board-score" id="guest-score-number">0</p>
+                        </div>
+                        <div class="score-buttons">
+                            <button class="plus-one-button" onclick="guestPlusOneScore()">+1</button>
+                            <button class="plus-two-button" onclick="guestPlusTwoScore()">+2</button>
+                            <button class="plus-three-button" onclick="guestPlusThreeScore()">+3</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            <script src="Practice Time 1.js"></script>
+
+    </body>
+</html>

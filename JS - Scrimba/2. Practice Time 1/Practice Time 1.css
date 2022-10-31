@@ -1,0 +1,321 @@
+body {
+    font-family: roboto, arial;
+    padding: 30px 0px 1000px 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.shoe-calculator {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ///// SHOE ///////////////////////////////////////////////////////////////////////////////// */
+
+.shoe-purchase {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.shoe-picture {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.product-model {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.purchase-button {
+    background: rgb(255, 220, 65);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 18px;
+    width: fit-content;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.purchase-button:hover {
+    background: rgb(255, 227, 102);
+}
+
+.purchase-button:active {
+    background: rgb(255, 233, 132);
+}
+
+#error-element {
+    color: red;
+    font-weight: 200;
+}
+
+/* ///// SIMPLE CALCULATOR ///////////////////////////////////////////////////////////////////////////////// */
+
+.calculator {
+    background-color: rgb(36, 119, 57);
+    padding: 20px 20px;
+    height: fit-content;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.nums-el {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 95px;
+}
+
+#num1-element {
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 6px 10px 5px 10px;
+    margin-bottom: 5px;
+}
+
+#num2-element {
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 6px 10px 5px 10px;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 95px;
+}
+
+.add-subtract-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.divide-multiply-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-button, .subtract-button, .divide-button, .multiply-button {
+    color: rgb(36, 119, 57);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.add-button {
+    margin-right: 5px;
+}
+
+.divide-button {
+    margin-right: 5px;
+}
+
+
+.add-button:hover, .subtract-button:hover, .divide-button:hover, .multiply-button:hover {
+    background-color: rgb(248, 255, 205);
+}
+
+.add-button:active, .subtract-button:active, .divide-button:active, .multiply-button:active {
+    background-color: rgb(234, 255, 176);
+}
+
+#Sum-element {
+    color: rgb(255, 253, 139);
+    font-weight: 700;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 9px 10px 8px 10px;
+    width: 74px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.clear-button {
+    color: rgb(36, 119, 57);
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 95px;
+    padding: 9px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.clear-button:hover {
+    background-color: rgb(248, 255, 205);
+}
+
+.clear-button:active {
+    background-color: rgb(234, 255, 176);
+}
+
+/* ///// BASKETBALL SCORE BOARD ///////////////////////////////////////////////////////////////////////////////// */
+
+h1 {
+    margin: 0px;
+}
+
+.board-background {
+    background-color: #1B244A;
+    border: 2px solid #F94F6D;
+    border-radius: 12px;
+    width: 485px;    ;
+    height: 315px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.home-score {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.guest-score {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.team {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 11px;
+}
+
+.board-score-container {
+    text-align: right;
+    background-color: #161616;
+    border-radius: 6px;
+    width: 145px;
+    height: 90px;
+    padding-top: 8px;
+    margin-bottom: 24px;
+}
+
+.board-score {
+    color: #F94F6D;
+    font-size: 70px;
+    font-weight: 900;
+    margin-right: 11px;
+}
+
+.plus-one-button, 
+.plus-two-button, 
+.plus-three-button {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #1B244A;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, font-size 0.2s, opacity 0.15s;
+}
+
+.plus-one-button, 
+.plus-two-button {
+    margin-right: 8px;
+}
+
+.plus-one-button:hover, 
+.plus-two-button:hover, 
+.plus-three-button:hover {
+    background-color: #ffffff;
+    color: #F94F6D;
+}
+
+.plus-one-button:active, 
+.plus-two-button:active, 
+.plus-three-button:active {
+    opacity: 0.6;
+    color: #F94F6D;
+}
+
+.reset-btn {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-icon {
+    width: 20px;    
+}
+
+.reset-button {
+    background-color: #1B244A;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, padding 0.25s;
+}
+
+.reset-button:hover {
+    background-color: #2c3879;
+    padding: 10px 12;
+}
+
+.reset-button:active {
+    background-color: #191f3b;
+    padding: 8px 10px;
+}
+
+.reset-txt {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.board-txt {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
