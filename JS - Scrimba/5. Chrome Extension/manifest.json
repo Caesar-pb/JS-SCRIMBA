@@ -4,6 +4,9 @@
     "name": "Leads tracker",
     "action": {
         "default_popup": "Chrome Extension.html",
-        "default_icon": "appicon.png"
-    }
+        "default_icon": "appIcon.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
