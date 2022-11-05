@@ -43,6 +43,24 @@ body {
     background-color: #92b64f;
 }
 
+#save-tab-button {
+    color: white;
+    background-color: #5f9341;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#save-tab-button:hover {
+    background-color: #789c46;
+}
+
+#save-tab-button:active {
+    background-color: #92b64f;
+}
+
 #delete-button {
     color: #5f9341;
     background-color: white;
@@ -63,7 +81,6 @@ body {
     background-color: hsl(83, 100%, 78%);
 }
 
-
 ul {
     list-style: none;
     padding-left: 0px;
@@ -78,50 +95,3 @@ li {
 a {                      
     color: #789c46;
 }
-/* #box {
-    background-color: rgb(75, 202, 196);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    width: min-content;
-    white-space: nowrap;
-    padding: 50px;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: backgroun-color 0.2s;
-}
-
-#box:hover {
-    background-color: rgb(67, 207, 184);
-}
-
-#box:active {
-    background-color: rgb(70, 218, 173);
-} */
-
-/* #container {
-    margin-top: 30px;
-}
-
-#container button {
-    background: lightcoral;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-}
-
-#container button:hover {
-    background: rgb(226, 113, 113);
-}
-
-#container button:active {
-    background: rgb(199, 81, 81);
-}
-
-.paragraph {
-    color: rgb(245, 127, 106);
-    font-weight: bold;
-} */
