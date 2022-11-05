@@ -1,4 +1,3 @@
-
 // function saveLead() {
 //     console.log("Button clicked from onclick attribute!")
 // }
@@ -761,52 +760,380 @@
 
 // How function parameters can improve our code
 
-let myLeads = []
-let oldLeads = []
-const inputElement = document.getElementById("imput-element")
-const saveInputButton = document.getElementById("save-input-button")
-const deleteButton = document.getElementById("delete-button")
-const listElement = document.getElementById("list-element")
+// let myLeads = []
+// let oldLeads = []
+// const inputElement = document.getElementById("imput-element")
+// const saveInputButton = document.getElementById("save-input-button")
+// const deleteButton = document.getElementById("delete-button")
+// const listElement = document.getElementById("list-element")
 
-const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+// const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
-if (leadsFromLocalStorage) {
-    myLeads = leadsFromLocalStorage
-    render(myLeads)
-}
+// if (leadsFromLocalStorage) {
+//     myLeads = leadsFromLocalStorage
+//     render(myLeads)
+// }
 
-function render(leads) {
-    let listItems = ""
-    for (i = 0; i < leads.length; i++) {
-        listItems += 
-            `<li>
-                <a target="_blank" href="${leads[i]}">
-                ${leads[i]}
-                </a>
-            </li>`
+// function render(leads) {
+//     let listItems = ""
+//     for (i = 0; i < leads.length; i++) {
+//         listItems += 
+//             `<li>
+//                 <a target="_blank" href="${leads[i]}">
+//                 ${leads[i]}
+//                 </a>
+//             </li>`
+//     }
+//     listElement.innerHTML = listItems
+// }
+
+// deleteButton.addEventListener("dblclick", function() {
+//     localStorage.clear()
+//     myLeads = []
+//     render(myLeads) 
+// })           
+
+// saveInputButton.addEventListener("click", function() {
+//     myLeads.push(inputElement.value)  
+//     inputElement.value = ""
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads)
+// })
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // Write your first "function parameter"
+
+// const welcomeElement = document.getElementById("welcome-element")
+
+// function greetUser(name) {
+//     welcomeElement.textContent = "Welcome back, " + name + "!"
+// }
+
+// greetUser("Caesar")
+
+// // Write your first "function parameter"
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// const welcomeElement = document.getElementById("welcome-element")
+
+// // Give the function a parameter, greeting, that replaces "Welcome back"
+
+// function greetUser(greeting) {
+//     welcomeElement.textContent = greeting + "Caesar Pichardo"
+// }
+
+// greetUser("Klk! ")
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // functions with multiple parameters
+
+// const welcomeElement = document.getElementById("welcome-element")
+
+// // Give the function a parameter, greeting, that replaces "Welcome back"
+
+// function greetUser(greeting, name, emoji) {
+//     welcomeElement.textContent = `${greeting}, ${name} ${emoji}`
+// }
+
+// greetUser("Klk", "Caesar Pichardo", "👋")
+
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// numbers as function parameters
+
+// // Create a function, add(), that adds two numbers together and returns the sum
+
+// function add(number1, number2) {
+//     return number1 + number2
+// }
+
+// console.log( add(3,4)    ) // should log 7
+// console.log( add(9, 102) ) // should log 111
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // arguments vs parameters
+
+// /*
+
+// Arguments are created on the outside of the function, and parameters
+// have to be on the inside of the function
+
+// */
+
+// //.                    parameters
+// function greetUser(greeting, name, emoji) {
+//     console.log(`${greeting}, ${name} ${emoji}`)
+// }
+// //.                arguments
+// greetUser("Klk", "Caesar Pichardo", "👋")
+
+// function add(number1, number2) {
+//     return number1 + number2
+// }
+
+// console.log( add(3,4) )
+
+// // say if this elements are parameters or arguments
+
+// // What are greeting and name? ----- parameters
+// // What are "Howdy" and "James"? --- arguments
+// // What are num1 and num2? --------- parameters
+// // What are 3 and 4? --------------- arguments
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // arrays as parameters
+
+// // // Create a function, getFirst(arr), that returns the first item in the array
+// // Call it with an array as an argument to verify that it works
+
+// function getFirst(arr) {
+//     return arr[0]
+// }
+
+// let firstCard = getFirst(["apple", "orange", "banana", "strawberry"])
+
+// console.log(firstCard)
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // create de tab button
+
+// let myLeads = []
+// let oldLeads = []
+// const inputElement = document.getElementById("imput-element")
+// const saveInputButton = document.getElementById("save-input-button")
+// const deleteButton = document.getElementById("delete-button")
+// const listElement = document.getElementById("list-element")
+// const tabButton = document.getElementById("save-tab-button")
+
+// const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+// if (leadsFromLocalStorage) {
+//     myLeads = leadsFromLocalStorage
+//     render(myLeads)
+// }
+
+// const tabs = [
+//     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+// ]
+
+// tabButton.addEventListener("click", function() {
+//     console.log(tabs[0].url) // with ".url" we can eliminate the "url:" off the logged link.
+// })                           // if we don't do this we will get en in the console: 
+//                              // >{url: 'https://www.linkedin.com/in/per-harald-borgen/'}
+//                              // instead of just the link
+ 
+// function render(leads) {
+//     let listItems = ""
+//     for (i = 0; i < leads.length; i++) {
+//         listItems += 
+//             `<li>
+//                 <a target="_blank" href="${leads[i]}">
+//                 ${leads[i]}
+//                 </a>
+//             </li>`
+//     }
+//     listElement.innerHTML = listItems
+// }
+
+// deleteButton.addEventListener("dblclick", function() {
+//     localStorage.clear()
+//     myLeads = []
+//     render(myLeads) 
+// })           
+
+// saveInputButton.addEventListener("click", function() {
+//     myLeads.push(inputElement.value)  
+//     inputElement.value = ""
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads)
+// })
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // save the tab url
+
+// let myLeads = []
+// let oldLeads = []
+// const inputElement = document.getElementById("imput-element")
+// const saveInputButton = document.getElementById("save-input-button")
+// const deleteButton = document.getElementById("delete-button")
+// const listElement = document.getElementById("list-element")
+// const tabButton = document.getElementById("save-tab-button")
+
+// const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+// if (leadsFromLocalStorage) {
+//     myLeads = leadsFromLocalStorage
+//     render(myLeads)
+// }
+
+// const tabs = [
+//     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+// ]
+
+// tabButton.addEventListener("click", function() {
+//     myLeads.push(tabs[0].url)  
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads)
+// })                           
+ 
+// function render(leads) {
+//     let listItems = ""
+//     for (i = 0; i < leads.length; i++) {
+//         listItems += 
+//             `<li>
+//                 <a target="_blank" href="${leads[i]}">
+//                 ${leads[i]}
+//                 </a>
+//             </li>`
+//     }
+//     listElement.innerHTML = listItems
+// }
+
+// deleteButton.addEventListener("dblclick", function() {
+//     localStorage.clear()
+//     myLeads = []
+//     render(myLeads) 
+// })           
+
+// saveInputButton.addEventListener("click", function() {
+//     myLeads.push(inputElement.value)  
+//     inputElement.value = ""
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads)
+// })
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// // get the current tab, use the chrome API to get the tap
+//     // Grab the URL of the current tab!
+
+// let myLeads = []
+// let oldLeads = []
+// const inputElement = document.getElementById("imput-element")
+// const saveInputButton = document.getElementById("save-input-button")
+// const deleteButton = document.getElementById("delete-button")
+// const listElement = document.getElementById("list-element")
+// const tabButton = document.getElementById("save-tab-button")
+
+// const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+// if (leadsFromLocalStorage) {
+//     myLeads = leadsFromLocalStorage
+//     render(myLeads)
+// }
+
+// /* since only one tab should be active and in the current window at once,
+// the return variable should only have one entry */
+
+// tabButton.addEventListener("click", function(tabs) {
+//     chrome.tabs.query({active: true, currentWindow: true}, function(){
+//         myLeads.push(tabs[0].url)  
+//         localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//         render(myLeads)
+//     })
+    
+// })                           
+ 
+// function render(leads) {
+//     let listItems = ""
+//     for (i = 0; i < leads.length; i++) {
+//         listItems += 
+//             `<li>
+//                 <a target="_blank" href="${leads[i]}">
+//                 ${leads[i]}
+//                 </a>
+//             </li>`
+//     }
+//     listElement.innerHTML = listItems
+// }
+
+// deleteButton.addEventListener("dblclick", function() {
+//     localStorage.clear()
+//     myLeads = []
+//     render(myLeads) 
+// })           
+
+// saveInputButton.addEventListener("click", function() {
+//     myLeads.push(inputElement.value)  
+//     inputElement.value = ""
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads)
+// })
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// DEPLOY THE FINAL VERSION!
+
+    let myLeads = []
+    let oldLeads = []
+    const inputElement = document.getElementById("imput-element")
+    const saveInputButton = document.getElementById("save-input-button")
+    const listElement = document.getElementById("list-element")
+    const deleteButton = document.getElementById("delete-button")
+    const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+    const tabButton = document.getElementById("save-tab-button")
+    
+    if (leadsFromLocalStorage) {
+        myLeads = leadsFromLocalStorage
+        render(myLeads)
     }
-    listElement.innerHTML = listItems
-}
-
-deleteButton.addEventListener("dblclick", function() {
-    localStorage.clear()
-    myLeads = []
-    render(myLeads) 
-})           
-
-saveInputButton.addEventListener("click", function() {
-    myLeads.push(inputElement.value)  
-    inputElement.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads)
-})
+    
+    tabButton.addEventListener("click", function() {
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+            myLeads.push(tabs[0].url)  
+            localStorage.setItem("myLeads", JSON.stringify(myLeads))
+            render(myLeads)
+        })
+    })                           
+     
+    function render(leads) {
+        let listItems = ""
+        for (i = 0; i < leads.length; i++) {
+            listItems += 
+                `<li>
+                    <a target="_blank" href="${leads[i]}">
+                    ${leads[i]}
+                    </a>
+                </li>`
+        }
+        listElement.innerHTML = listItems
+    }
+    
+    deleteButton.addEventListener("dblclick", function() {
+        localStorage.clear()
+        myLeads = []
+        render(myLeads) 
+    })           
+    
+    saveInputButton.addEventListener("click", function() {
+        myLeads.push(inputElement.value)  
+        inputElement.value = ""
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+    })
 
 // ---------------------------------------------------------------------------------------------------------------
 
+// RECAP
 
+/* 
 
-// ---------------------------------------------------------------------------------------------------------------
+const variable 
+addEveventListener()
+innerHTML
+input.value
+function parameters
+template strings ``
+localStorage
+The JSON object (JSON.parse) (JSON.stringify) (manifest.json file)
+objects inside of arrays
 
-
-
-// ---------------------------------------------------------------------------------------------------------------
+*/
